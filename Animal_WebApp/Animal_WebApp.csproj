@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
     <Content Include="assets\animalImages\hippo.jpg" />
     <Content Include="assets\animalImages\horse.jpg" />
     <Content Include="assets\animalImages\koala.jpg" />
@@ -103,6 +104,7 @@
     <Content Include="assets\animalSounds\tiger.mp3" />
     <Content Include="assets\animalSounds\wolf.mp3" />
     <Content Include="assets\images\lush-green-grass-texture.jpg" />
+    <Content Include="Contact.aspx" />
     <Content Include="Farm.aspx" />
     <Content Include="Forest.aspx" />
     <Content Include="Ocean.aspx" />
@@ -123,6 +125,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Farm.aspx.cs">
       <DependentUpon>Farm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
