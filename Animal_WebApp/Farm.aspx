@@ -4,46 +4,39 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row">
+        <audio id="audio" hidden autostart="false"></audio>
         <div class="col-md-3 col-sm-6">
-            <div class="animal">
-                <div class="animal-icon">
-                    <%--<img src="images/icon-church.png" alt="" class="img-responsive img-circle">--%>
-                    <img class="img-responsive img-circle center-block" src="http://placehold.it/300x300/" alt="" />
-                </div>
-                <h2 class="animal-title">Who we are?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor.</p>
+            <div class="animal-icon">
+                <img data-animal="pig" class="animal img-responsive img-circle center-block" src="http://placehold.it/300x300/" alt="" />
             </div>
+            <h2 class="animalTitle">PIG</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor.</p>
         </div>
         <div class="col-md-3 col-sm-6">
-            <div class="animal">
-                <div class="animal-icon">
-                    <%--<img src="images/icon-candles.png" alt="" class="img-responsive img-circle">--%>
-                    <img class="img-responsive img-circle center-block" src="http://placehold.it/300x300/" alt="" />
-                </div>
-                <h2 class="animal-title">Believes</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor.</p>
+            <div class="animal-icon">
+                <img data-animal="sheep" class="animal img-responsive img-circle center-block" src="http://placehold.it/300x300/" alt="" />
             </div>
+            <h2 class="animalTitle">SHEEP</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor.</p>
         </div>
         <div class="col-md-3 col-sm-6">
-            <div class="animal">
-                <div class="animal-icon">
-                    <%--<img src="images/icon-cross.png" alt="" class="img-responsive img-circle">--%>
-                    <img class="img-responsive img-circle center-block" src="http://placehold.it/300x300/" alt="" />
-                </div>
-                <h2 class="animal-title">Our creed</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor.</p>
+            <div class="animal-icon">
+                <img data-animal="murloc" class="animal img-responsive img-circle center-block" src="http://placehold.it/300x300/" alt="" />
             </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="animal">
-                <div class="animal-icon">
-                    <%--<img src="images/icon-star.png" alt="" class="img-responsive img-circle">--%>
-                    <img class="img-responsive img-circle center-block" src="http://placehold.it/300x300/" alt="" />
-                </div>
-                <h2 class="animal-title">Love &amp; Peace</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor.</p>
-            </div>
+            <h2 class="animalTitle">MURLOC</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor.</p>
         </div>
     </div>
-    <!-- .row -->
+    <script>
+        $(".animal").click(function () {
+            var animal = $(this).data('animal')
+            playSound(animal);
+        });
+
+        function playSound(animal) {
+            var sound = document.getElementById("audio");
+            sound.src = "animalSounds/" + animal + ".ogg";
+            sound.play();
+        }
+    </script>
 </asp:Content>

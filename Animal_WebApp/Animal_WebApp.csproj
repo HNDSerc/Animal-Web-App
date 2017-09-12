@@ -66,8 +66,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Farm.aspx" />
+    <Content Include="Forest.aspx" />
+    <Content Include="Ocean.aspx" />
     <Content Include="packages.config" />
     <Content Include="Main.Master" />
+    <Content Include="animalSounds\murloc.ogg" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -78,9 +82,24 @@
   <ItemGroup>
     <Content Include="Index.aspx" />
     <Content Include="MainStyle.css" />
+    <Content Include="Sky.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Farm.aspx.cs">
+      <DependentUpon>Farm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Farm.aspx.designer.cs">
+      <DependentUpon>Farm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forest.aspx.cs">
+      <DependentUpon>Forest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forest.aspx.designer.cs">
+      <DependentUpon>Forest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -95,7 +114,21 @@
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
+    <Compile Include="Ocean.aspx.cs">
+      <DependentUpon>Ocean.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ocean.aspx.designer.cs">
+      <DependentUpon>Ocean.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sky.aspx.cs">
+      <DependentUpon>Sky.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sky.aspx.designer.cs">
+      <DependentUpon>Sky.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
