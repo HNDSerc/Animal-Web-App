@@ -4,11 +4,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="col-sm-12">
+        <h2 class="text-center">Home</h2>
         <div id="indexMenuBox">
-            <a href="Farm.aspx" class="btn btn-primary btn-lg btn-block">Farm</a>
-            <a href="Forest.aspx" class="btn btn-success btn-lg btn-block">Forest</a>
-            <a href="Ocean.aspx" class="btn btn-info btn-lg btn-block">Ocean</a>
-            <a href="Sky.aspx" class="btn btn-default btn-lg btn-block">Sky</a>
+            <a href="Petting.aspx" class="btn btn-primary btn-lg btn-block">Petting Zoo</a>
+            <a href="Small.aspx" class="btn btn-success btn-lg btn-block">Zoo<br />
+                <small>small animals</small></a>
+            <a href="Big.aspx" class="btn btn-info btn-lg btn-block">Zoo<br /> <small>big animals</small>
+            </a>
+            <%--<a href="Sky.aspx" class="btn btn-default btn-lg btn-block">Sky</a>--%>
         </div>
     </div>
 </asp:Content>

@@ -105,9 +105,9 @@
     <Content Include="assets\animalSounds\wolf.mp3" />
     <Content Include="assets\images\lush-green-grass-texture.jpg" />
     <Content Include="Contact.aspx" />
-    <Content Include="Farm.aspx" />
-    <Content Include="Forest.aspx" />
-    <Content Include="Ocean.aspx" />
+    <Content Include="Petting.aspx" />
+    <Content Include="Big.aspx" />
+    <Content Include="Small.aspx" />
     <Content Include="packages.config" />
     <Content Include="Main.Master" />
     <Content Include="assets\animalSounds\murloc.ogg" />
@@ -121,7 +121,6 @@
   <ItemGroup>
     <Content Include="Index.aspx" />
     <Content Include="assets\MainStyle.css" />
-    <Content Include="Sky.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -139,19 +138,19 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Farm.aspx.cs">
-      <DependentUpon>Farm.aspx</DependentUpon>
+    <Compile Include="Petting.aspx.cs">
+      <DependentUpon>Petting.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Farm.aspx.designer.cs">
-      <DependentUpon>Farm.aspx</DependentUpon>
+    <Compile Include="Petting.aspx.designer.cs">
+      <DependentUpon>Petting.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forest.aspx.cs">
-      <DependentUpon>Forest.aspx</DependentUpon>
+    <Compile Include="Big.aspx.cs">
+      <DependentUpon>Big.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forest.aspx.designer.cs">
-      <DependentUpon>Forest.aspx</DependentUpon>
+    <Compile Include="Big.aspx.designer.cs">
+      <DependentUpon>Big.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -167,21 +166,14 @@
     <Compile Include="Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
-    <Compile Include="Ocean.aspx.cs">
-      <DependentUpon>Ocean.aspx</DependentUpon>
+    <Compile Include="Small.aspx.cs">
+      <DependentUpon>Small.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Ocean.aspx.designer.cs">
-      <DependentUpon>Ocean.aspx</DependentUpon>
+    <Compile Include="Small.aspx.designer.cs">
+      <DependentUpon>Small.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sky.aspx.cs">
-      <DependentUpon>Sky.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Sky.aspx.designer.cs">
-      <DependentUpon>Sky.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

@@ -15,44 +15,76 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand boldText" href="#">Animals</a>
-                </div>
+        <div class="container-fluid bg spaceBelow">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand footerTitle" href="Index.aspx">Zoo Animals</a>
+                    </div>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="Index.aspx">Main menu <span class="sr-only">(current)</span></a></li>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="Index.aspx">Main menu</a></li>
+                            <li><a href="Contact.aspx">Contact</a></li>
+                            <li><a href="About.aspx">About</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <div class="container bg">
+            </nav>
             <audio id="audio" hidden autostart="false"></audio>
-            <div class="row spaceAbove">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
+            <div class="container">
+                <div class="row">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
             </div>
         </div>
         <!-- Footer -->
         <footer class="navbar navbar-default">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <%--<p style="color:#fff;padding-top:8px;" class="text-center"><span class="footerTitle">Copyright &copy; SERC 2017 <br />  created by </span> <br /> Kerry-Anne Pridgen, Martin Høite, <br /> Lee Martin, Daniel Mclarnon</p>--%>
-                    <p style="color:#fff;padding-top:8px;" class="text-center footerTitle">Copyright &copy; SERC 2017 <br />  created by &lt; BLNQ / &gt;</p>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <%--<p style="color:#fff;padding-top:8px;" class="text-center"><span class="footerTitle">Copyright &copy; SERC 2017 <br />  created by </span> <br /> Kerry-Anne Pridgen, Martin Høite, <br /> Lee Martin, Daniel Mclarnon</p>--%>
+                        <p style="color: #fff; padding-top: 8px;" class="text-center footerTitle">
+                            Copyright &copy; SERC 2017
+                        <br />
+                            created by &lt; BLNQ / &gt;
+                        </p>
+                    </div>
+                    <!-- /.col-lg-12 -->
                 </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-        </footer>
+                <!-- /.row -->
+            </footer>
     </form>
     <script>
+
+
+        //Set current page as the active link in the menu
+        var activeLink = (function () {
+            'use strict';
+            function findCurrentLink(selector, classname) {
+                var links = document.querySelectorAll(selector),
+                    //currentUrl = window.location.href;
+                    //Small fix to allow parameters in the URL.
+                    currentUrl = window.location.href.split('?')[0];
+                classname = classname || 'active';
+                for (var i = 0; i < links.length; i++) {
+                    if (links[i].tagName === 'A') {
+                        if (links[i].href === currentUrl) {
+                            links[i].parentNode.classList.add(classname);
+                        }
+                    }
+                }
+            }
+            return function (selector, classname) { return findCurrentLink(selector, classname) };
+        }(window, undefined));
+        activeLink('.navbar-nav a', 'active');
+
         $(".animal").click(function () {
             var animal = $(this).data('animal')
             playSound(animal);

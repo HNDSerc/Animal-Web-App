@@ -2,11 +2,39 @@
     height: 100%;
 }
 
-.navbar{
-    margin-bottom:0;
+h2{
+    font-weight:bold;
+    color:#fff;
+    text-shadow:3px 2px 3px #000;
+}
+
+small{
+    font-size:60%;
+}
+
+.btn-primary{
+    background-color:#0094ff;
+}
+.btn-primary:hover{
+    background-color:#005bff;
+}
+
+.btn-success{
+    background-color:#b200ff;
+}
+.btn-success:hover{
+    background-color:#8f00ff;
+}
+
+.btn-info{
+    background-color:#e10b8e;
+}
+.btn-info:hover{
+    background-color:#e10b5a;
 }
 
 .bg {
+    margin-top:40px;
     /* The image used */
     background-image: url("images/lush-green-grass-texture.jpg");
 
@@ -17,11 +45,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height:480px;
+    background-attachment:fixed;
 }
 
 .spaceAbove{
-    margin-top:15px;
+    padding-top:15px;
+}
+
+.spaceBelow{
+    padding-bottom:15px;
+}
+
+footer{
+    margin-bottom:0 !important;
 }
 
 .footerTitle{
@@ -35,6 +71,10 @@
     background:rgba(77, 77, 77, 0.7);
     padding-top:20px;
 }
+
+/*#indexMenuBox{
+    min-height:68vh;
+}*/
 
 #indexMenuBox a{
     font-size:2em;

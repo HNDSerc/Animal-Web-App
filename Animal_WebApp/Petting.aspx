@@ -1,8 +1,9 @@
-﻿<%@ Page Title="Animals - on a farm" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Farm.aspx.cs" Inherits="Animal_WebApp.Farm" %>
+﻿<%@ Page Title="Animals - on a farm" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Petting.aspx.cs" Inherits="Animal_WebApp.Farm" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h2 class="text-center">Petting zoo</h2>
     <asp:Repeater ID="AllAnimals_Repeater" runat="server">
         <ItemTemplate>
             <div class="animalBox col-md-3 col-sm-6">

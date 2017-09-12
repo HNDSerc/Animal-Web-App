@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Animals - in the forest" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Forest.aspx.cs" Inherits="Animal_WebApp.Forest" %>
+﻿<%@ Page Title="Animals - in the ocean" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Small.aspx.cs" Inherits="Animal_WebApp.Ocean" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
