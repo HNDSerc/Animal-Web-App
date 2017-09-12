@@ -2,6 +2,10 @@
     height: 100%;
 }
 
+.navbar{
+    margin-bottom:0;
+}
+
 .bg {
     /* The image used */
     background-image: url("images/lush-green-grass-texture.jpg");

@@ -66,6 +66,22 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\animalImages\hippo.jpg" />
+    <Content Include="assets\animalImages\horse.jpg" />
+    <Content Include="assets\animalImages\koala.jpg" />
+    <Content Include="assets\animalImages\lion.jpg" />
+    <Content Include="assets\animalImages\monkey.jpg" />
+    <Content Include="assets\animalImages\mouse.jpg" />
+    <Content Include="assets\animalImages\panda.jpg" />
+    <Content Include="assets\animalImages\panther.jpg" />
+    <Content Include="assets\animalImages\pig.jpg" />
+    <Content Include="assets\animalImages\rabbit.jpg" />
+    <Content Include="assets\animalImages\rhino.jpg" />
+    <Content Include="assets\animalImages\sheep.jpg" />
+    <Content Include="assets\animalImages\snake.jpg" />
+    <Content Include="assets\animalImages\tiger.jpg" />
+    <Content Include="assets\animalImages\turkey.jpg" />
+    <Content Include="assets\animalImages\zebra.jpg" />
     <Content Include="assets\animalSounds\bear.mp3" />
     <Content Include="assets\animalSounds\cat.mp3" />
     <Content Include="assets\animalSounds\chicken.mp3" />
@@ -151,9 +167,7 @@
       <DependentUpon>Sky.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="assets\animalImages\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
