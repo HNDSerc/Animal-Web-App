@@ -1,0 +1,13 @@
+﻿body{
+    /*background-color:#;*/
+}
+
+#indexMenuBox a{
+    font-size:2em;
+    font-weight:bold;
+    border:4px inset #808080;
+}
+
+.boldText{
+    font-weight:bold;
+}
