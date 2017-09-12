@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row">
+    <div class="row spaceAbove">
         <audio id="audio" hidden autostart="false"></audio>
         <asp:Repeater ID="AllAnimals_Repeater" runat="server">
             <ItemTemplate>
