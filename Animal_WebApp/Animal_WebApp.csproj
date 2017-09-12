@@ -66,12 +66,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\images\lush-green-grass-texture.jpg" />
     <Content Include="Farm.aspx" />
     <Content Include="Forest.aspx" />
     <Content Include="Ocean.aspx" />
     <Content Include="packages.config" />
     <Content Include="Main.Master" />
-    <Content Include="animalSounds\murloc.ogg" />
+    <Content Include="assets\animalSounds\murloc.ogg" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -81,7 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Index.aspx" />
-    <Content Include="MainStyle.css" />
+    <Content Include="assets\MainStyle.css" />
     <Content Include="Sky.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -129,6 +130,9 @@
     <Compile Include="Sky.aspx.designer.cs">
       <DependentUpon>Sky.aspx</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\animalImages\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

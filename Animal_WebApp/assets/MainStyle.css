@@ -1,0 +1,46 @@
+﻿body, html {
+    height: 100%;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("images/lush-green-grass-texture.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.animalBox{
+    background:rgba(77, 77, 77, 0.7);
+    padding-top:20px;
+}
+
+#indexMenuBox a{
+    font-size:2em;
+    font-weight:bold;
+    border:4px inset #808080;
+}
+
+.animal{
+    padding-bottom:30px;
+}
+
+.animalTitle{
+    font-weight:bold;
+    text-align:center;
+    font-size:1.5em;
+    text-shadow:1px #808080;
+    color:#000;
+}
+
+p{
+    text-align:center;
+    font-size:1em;
+    padding-bottom:15px;
+    color:#000;
+}

@@ -5,21 +5,21 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row">
         <audio id="audio" hidden autostart="false"></audio>
-        <div class="col-md-3 col-sm-6">
+        <div class="animalBox col-md-3 col-sm-6">
             <div class="animal-icon">
                 <img data-animal="pig" class="animal img-responsive img-circle center-block" src="http://placehold.it/300x300/" alt="" />
             </div>
             <h2 class="animalTitle">PIG</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor.</p>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="animalBox col-md-3 col-sm-6">
             <div class="animal-icon">
                 <img data-animal="sheep" class="animal img-responsive img-circle center-block" src="http://placehold.it/300x300/" alt="" />
             </div>
             <h2 class="animalTitle">SHEEP</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor.</p>
         </div>
-        <div class="col-md-3 col-sm-6">
+        <div class="animalBox col-md-3 col-sm-6">
             <div class="animal-icon">
                 <img data-animal="murloc" class="animal img-responsive img-circle center-block" src="http://placehold.it/300x300/" alt="" />
             </div>
@@ -35,7 +35,7 @@
 
         function playSound(animal) {
             var sound = document.getElementById("audio");
-            sound.src = "animalSounds/" + animal + ".ogg";
+            sound.src = "assets/animalSounds/" + animal + ".ogg";
             sound.play();
         }
     </script>
