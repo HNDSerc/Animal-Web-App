@@ -66,6 +66,26 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\animalSounds\bear.mp3" />
+    <Content Include="assets\animalSounds\cat.mp3" />
+    <Content Include="assets\animalSounds\chicken.mp3" />
+    <Content Include="assets\animalSounds\chicks.mp3" />
+    <Content Include="assets\animalSounds\cow.mp3" />
+    <Content Include="assets\animalSounds\dog.mp3" />
+    <Content Include="assets\animalSounds\donkey.mp3" />
+    <Content Include="assets\animalSounds\duck.mp3" />
+    <Content Include="assets\animalSounds\elephant.mp3" />
+    <Content Include="assets\animalSounds\frog.mp3" />
+    <Content Include="assets\animalSounds\goat.mp3" />
+    <Content Include="assets\animalSounds\horse.mp3" />
+    <Content Include="assets\animalSounds\lion.mp3" />
+    <Content Include="assets\animalSounds\monkey.mp3" />
+    <Content Include="assets\animalSounds\pig.mp3" />
+    <Content Include="assets\animalSounds\pollar bear.mp3" />
+    <Content Include="assets\animalSounds\rooster.mp3" />
+    <Content Include="assets\animalSounds\sheep.mp3" />
+    <Content Include="assets\animalSounds\tiger.mp3" />
+    <Content Include="assets\animalSounds\wolf.mp3" />
     <Content Include="assets\images\lush-green-grass-texture.jpg" />
     <Content Include="Farm.aspx" />
     <Content Include="Forest.aspx" />
