@@ -11,7 +11,10 @@ namespace Animal_WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            var smallAnimalsList = new List<string> { "monkey", "snake", "koala" };
 
+            AllAnimals_Repeater.DataSource = smallAnimalsList;
+            AllAnimals_Repeater.DataBind();
         }
     }
 }

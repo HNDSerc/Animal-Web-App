@@ -10,8 +10,10 @@
                 <div class="animal-icon">
                     <img data-animal='<%# Container.DataItem %>' class="animal img-responsive img-circle center-block" src='assets/animalImages/<%# Container.DataItem %>.jpg' alt="" />
                 </div>
-                <h2 class="animalTitle text-capitalize"><%# Container.DataItem %></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor.</p>
+                <div class="animalText">
+                    <h2 class="animalTitle text-capitalize"><%# Container.DataItem %></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor.</p>
+                </div>
             </div>
         </ItemTemplate>
     </asp:Repeater>

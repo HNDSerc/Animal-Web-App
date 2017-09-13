@@ -11,9 +11,9 @@ namespace Animal_WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var animalList = new List<string> { "hippo", "horse", "koala", "lion", "monkey", "mouse", "panda", "panther", "pig", "rabbit", "rhino", "sheep", "snake", "tiger", "turkey", "zebra" };
+            var pettingAnimalList = new List<string> { "horse", "mouse",  "pig", "rabbit", "sheep", "turkey" };
 
-            AllAnimals_Repeater.DataSource = animalList;
+            AllAnimals_Repeater.DataSource = pettingAnimalList;
             AllAnimals_Repeater.DataBind();
         }
     }

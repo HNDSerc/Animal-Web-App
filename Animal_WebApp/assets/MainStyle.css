@@ -102,19 +102,33 @@ footer {
 }
 
 .animalBox {
-    background: rgba(77, 77, 77, 0.7);
+    background: rgba(239, 239, 239, 0.65);
+    border-radius:20px;
+    border:2px groove #000;
     padding-top: 20px;
+    margin-top:15px;
 }
 
-/*#indexMenuBox{
+.animalText{
+    /*border:1px outset #000;*/
+    background-color:#3d3d3d;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom:15px;
+    color:#fff !important;
+}
+
+    .animalText h2, .animalText p{
+        color:#fff;
+    }
+    /*#indexMenuBox{
     min-height:68vh;
 }*/
-
-#indexMenuBox a, #indexMenuBox button {
-    font-size: 2em;
-    font-weight: bold;
-    border: 4px inset #808080;
-}
+    #indexMenuBox a, #indexMenuBox button {
+        font-size: 2em;
+        font-weight: bold;
+        border: 4px inset #808080;
+    }
 
 .animal {
     padding-bottom: 30px;
