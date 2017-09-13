@@ -103,6 +103,7 @@
     <Content Include="assets\animalSounds\sheep.mp3" />
     <Content Include="assets\animalSounds\tiger.mp3" />
     <Content Include="assets\animalSounds\wolf.mp3" />
+    <Content Include="assets\images\favicon.ico" />
     <Content Include="assets\images\lush-green-grass-texture.jpg" />
     <Content Include="Contact.aspx" />
     <Content Include="Petting.aspx" />
