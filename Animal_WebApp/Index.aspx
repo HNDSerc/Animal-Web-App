@@ -9,9 +9,22 @@
             <a href="Petting.aspx" class="btn btn-primary btn-lg btn-block">Petting Zoo</a>
             <a href="Small.aspx" class="btn btn-success btn-lg btn-block">Zoo<br />
                 <small>small animals</small></a>
-            <a href="Big.aspx" class="btn btn-info btn-lg btn-block">Zoo<br /> <small>big animals</small>
+            <a href="Big.aspx" class="btn btn-info btn-lg btn-block">Zoo<br />
+                <small>big animals</small>
             </a>
-            <%--<a href="Sky.aspx" class="btn btn-default btn-lg btn-block">Sky</a>--%>
+            <div id="aditionalOptionsBox">
+                <a href="Contact.aspx" class="btn btn-danger"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+                <a id="volumeToggle" class="btn btn-danger"><span class="glyphicon glyphicon glyphicon-volume-up volumeOptions" aria-hidden="true"></span></a>
+                <a href="About.aspx" class="btn btn-danger"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>
+            </div>
+            <div id="volumeSliderBox" style="display:none;" class="spaceAbove">
+                <input type="range" name="volume" id="volume" class="volumeOptions" value="50" min="0" max="100">
+            </div>
         </div>
     </div>
+    <script>
+        $("#volumeToggle").click(function () {
+            $("#volumeSliderBox").toggle("slow");
+        });
+    </script>
 </asp:Content>
