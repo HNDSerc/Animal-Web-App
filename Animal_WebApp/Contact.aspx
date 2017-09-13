@@ -78,7 +78,7 @@
                     <div class="col-md-4 inputGroupContainer">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                            <input name="city" placeholder="city" class="form-control" type="text">
+                            <input name="city" placeholder="City" class="form-control" type="text">
                         </div>
                     </div>
                 </div>
@@ -91,17 +91,6 @@
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                             <input name="zip" placeholder="Zip Code" class="form-control" type="text">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Text input-->
-                <div class="form-group">
-                    <label class="col-md-4 control-label">Website or domain name</label>
-                    <div class="col-md-4 inputGroupContainer">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
-                            <input name="website" placeholder="Website or domain name" class="form-control" type="text">
                         </div>
                     </div>
                 </div>
@@ -121,6 +110,18 @@
                                 <input type="radio" name="feedback" value="no" />
                                 No
                             </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text area -->
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Your message</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control" name="comment" placeholder="Message"></textarea>
                         </div>
                     </div>
                 </div>
